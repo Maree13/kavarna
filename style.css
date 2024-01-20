@@ -59,7 +59,7 @@ nav li {
 }
 
 nav ul:nth-child(2) {
-  /* margin-left: 100px; */
+  margin-left: 100px;
 }
 
 nav li a {
@@ -71,7 +71,7 @@ nav ul:nth-child(2) li {
   margin-right: 0;
   /* padding-right: 0; */
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 
