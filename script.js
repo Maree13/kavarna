@@ -15,10 +15,3 @@ menuIcon.addEventListener('click', () => {
     menuList.style.display = 'none';
   }
 });
-
-// window.addEventListener('resize', () => {
-//   if (window.innerWidth > 600) {
-//     menuList.style.display = '';
-//     hamburgerIcon.classList.replace('fa-xmark', 'fa-bars');
-//   }
-// });

@@ -31,4 +31,12 @@
     /* font-size: 23px; */
     font-size: 30px;
   }
+
+  /* RECTANGLES */
+
+  .rectangle-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

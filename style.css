@@ -11,6 +11,7 @@
   /* --background-dark: #111; */
   --background-dark: #1a1a1a;
   --font-dark: #1a1a1a;
+  --light: #f7f7f7;
 }
 
 /* BODY */
@@ -58,13 +59,21 @@ nav li {
 }
 
 nav ul:nth-child(2) {
-  margin-left: 100px
+  /* margin-left: 100px; */
 }
 
 nav li a {
   text-decoration: none;
-  color: var(--font-dark)
+  color: var(--font-dark);
 }
+
+nav ul:nth-child(2) li {
+  margin-right: 0;
+  /* padding-right: 0; */
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 
 /* HAMBURGER MENU ICON */
 
@@ -78,6 +87,8 @@ nav li a {
 
 /* FIRST PAGE SECTION */
 
+/* BACKGROUND PHOTO */
+
 .first-page {
   background-image: url('./img/kavarna01.jpg');
   /* min-height: calc(100vh - 70px); */
@@ -85,4 +96,36 @@ nav li a {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+/* RECTANGLES */
+
+.rectangle-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  position: absolute;
+  right: 30px;
+  bottom: 7%;
+  flex-wrap: wrap-reverse;
+}
+
+.rectangle {
+  width: 240px;
+  height: 170px;
+  border: 9px solid var(--light);
+  /* opacity: 0.9; */
+  /* var(--light); */
+  position: relative;
+}
+
+.rectangle-text {
+  color: var(--font-dark);
+  background-color: var(--background-light);
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px 10px;
+  text-transform: lowercase;
 }
