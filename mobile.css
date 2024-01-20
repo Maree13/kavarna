@@ -1,0 +1,34 @@
+@media (max-width: 600px) {
+
+  /* HEADER */
+
+  header {
+    position: relative;
+    height: 70px;
+  }
+
+  header nav {
+    display: none;
+    /* SKUSALA SOM DISPLAY: BLOCK !IMPORTANT - NEFUNGOVALO SPUSTENIE MENU*/
+    position: absolute;
+    top: 80px;
+    background-color: var(--background-light);
+    width: 100%;
+  }
+
+  .logo img {
+    width: 80px;
+    top: 40px;
+    position: relative;
+    z-index: 999;
+  }
+
+  /* HAMBURGER MENU ICON */
+
+  .menu-icon {
+    display: block;
+    color: var(--font-dark);
+    /* font-size: 23px; */
+    font-size: 30px;
+  }
+}
