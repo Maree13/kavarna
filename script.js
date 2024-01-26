@@ -14,4 +14,12 @@ menuIcon.addEventListener('click', () => {
     hamburgerIcon.classList.remove('fa-xmark');
     menuList.style.display = 'none';
   }
+
+  // VIEM, ZE BY SOM MALA UPREDNOSTNIT CSS, ALE FUNGUJE MI TO LEPSIE V JAVASCRIPTU. NERADA POUZIVAM V CSS !IMPORTANT, MAM POCIT ZE MI TO ROZHODI CELE CSS
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 600) {
+      menuList.style.display = '';
+      hamburgerIcon.classList.replace('fa-xmark', 'fa-bars');
+    }
+  });
 });
