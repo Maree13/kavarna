@@ -46,7 +46,7 @@ header {
 
 /* NAVIGATION */
 
-nav {
+header nav {
   margin-right: 30px;
   margin-left: 50px;
   display: flex;
