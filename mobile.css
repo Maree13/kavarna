@@ -8,12 +8,15 @@
   }
 
   header nav {
+    /* display: block; */
+    /*!important;*/
     display: none;
-    /* SKUSALA SOM DISPLAY: BLOCK !IMPORTANT - NEFUNGOVALO SPUSTENIE MENU*/
+
     position: absolute;
     top: 80px;
     background-color: var(--background-light);
     width: 100%;
+    z-index: 999;
   }
 
   .logo img {
@@ -29,20 +32,26 @@
     display: block;
     color: var(--font-dark);
     font-size: 30px;
-    margin-right: 50px;
+    cursor: pointer;
   }
+
 
   /* RECTANGLES */
 
   .rectangle-container {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     align-items: center;
-    flex-wrap: nowrap;
-    margin-right: 20px;
+    right: 0;
+    bottom: 0;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
   }
 
   .rectangle {
     width: 190px;
-    height: 130px;
+    max-height: 130px;
+    border-width: 7px;
   }
