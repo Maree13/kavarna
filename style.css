@@ -29,7 +29,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* height: 200px; */
+  height: 200px;
 }
 
 
@@ -148,4 +148,29 @@ nav ul:nth-child(2) li {
   right: 0;
   padding: 5px 10px;
   text-transform: lowercase;
+}
+
+/* SECTION 02 */
+
+/* GALLERY */
+
+.secondpage-gallery-container {
+  display: flex;
+  gap: 120px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.gallery-image_wrapper {
+  width: 100%;
+}
+
+.image01,
+.image02,
+.image03 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 5px;
 }
