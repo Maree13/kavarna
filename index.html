@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="tablet.css" />
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,9 +38,9 @@
         <!-- LIST - MENU PAGES -->
 
         <ul>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Galerie</a></li>
+          <li><a href="#page01">Intro</a></li>
+          <li><a href="#page02">O kávě</a></li>
+          <li><a href="#page03">Menu</a></li>
           <li><a href="#">O nás</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
@@ -68,7 +69,7 @@
     </header>
 
     <main>
-      <section class="first-page">
+      <section class="first-page" id="page01">
         <div class="rectangle-container">
           <a href="#"
             ><div class="rectangle rectangle01">
@@ -93,7 +94,18 @@
         </div>
       </section>
 
-      <section class="second-page">
+      <section class="second-page" id="page02">
+        <p class="section02-APIquote">
+          Tu moze byt nejaka quota stahovana pomocou API
+        </p>
+
+        <p class="section02-paragraph01">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis
+          ipsam ex consequatur corrupti quas nesciunt explicabo aspernatur
+          repudiandae non. Fugit, dolorum vero beatae minus dolore quidem quos
+          quod ullam.
+        </p>
+
         <section class="secondpage-gallery-container" id="secondpage-gallery">
           <div class="gallery-image_wrapper image01">
             <img class="image01" src="./img/coffee01.jpg" alt="image" />
@@ -106,6 +118,20 @@
           <div class="gallery-image_wrapper image03">
             <img class="image03" src="./img/coffee03.jpg" alt="image" />
           </div>
+        </section>
+
+        <section class="third-page" id="page03">
+          <h1 class="third-page_header">Menu</h1>
+          <ul class="third-page_list">
+            <li>— KÁVA Espresso 60,-</li>
+            <li>Doppio 80,-</li>
+            <li>Capuccino 80,-</li>
+            <li>Flat White 90,-</li>
+            <li>Cafe Latte 80,-</li>
+            <li>Espresso Tonic 90,-</li>
+            <li>Ice Coffee 105,-</li>
+            <li>Veškerou kávu nabízíme i s alternativním mlékem.</li>
+          </ul>
         </section>
       </section>
     </main>

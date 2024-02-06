@@ -1,0 +1,7 @@
+/* RECTANGLES DESAPEARES ON SMALL-SIZE MEDIA */
+
+@media (max-width: 885px) {
+  .rectangle-container {
+    display: none;
+  }
+}

@@ -110,7 +110,7 @@ nav ul:nth-child(2) li {
 .rectangle-container {
   display: flex;
   justify-content: flex-end;
-  gap: 25px;
+  gap: 40px;
   position: absolute;
   right: 50px;
   bottom: 7%;
@@ -124,7 +124,7 @@ nav ul:nth-child(2) li {
 .rectangle {
   width: 240px;
   height: 170px;
-  border: 9px solid var(--light);
+  border: 12px solid var(--light);
   /* opacity: 0.9; */
   /* var(--light); */
   position: relative;
@@ -152,7 +152,25 @@ nav ul:nth-child(2) li {
 
 /* SECTION 02 */
 
-/* GALLERY */
+/* API QUOTE - MOZNO TO TU DAM, ESTE NEVIEM */
+
+.section02-APIquote {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* PARAGRAPH */
+
+.section02-paragraph01 {
+  padding: 40px 100px 0 100px;
+  text-align: center;
+}
+
+/* SECOND PAGE GALLERY */
+
+.second-page {
+  min-height: 100vh;
+}
 
 .secondpage-gallery-container {
   display: flex;
@@ -172,5 +190,32 @@ nav ul:nth-child(2) li {
   width: 100%;
   height: 100%;
   background-size: cover;
-  border-radius: 5px;
+  /* border-radius: 3px; */
+  transition: transform 0.3s ease;
+}
+
+.image01:hover,
+.image02:hover,
+.image03:hover {
+  transform: scale(1.05);
+  /* Zväčšenie o 5% */
+}
+
+
+/* SECTION 03 */
+
+.third-page {
+  min-height: 100vh;
+}
+
+.third-page_header {
+  text-align: center;
+  padding: 30px;
+  margin-top: 10%;
+}
+
+.third-page_list {
+  text-align: center;
+  padding: 30px;
+  list-style-type: none;
 }
