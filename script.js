@@ -9,6 +9,7 @@ menuIcon.addEventListener('click', () => {
     hamburgerIcon.classList.remove('fa-bars');
     hamburgerIcon.classList.add('fa-xmark');
     menuList.style.display = 'block';
+    menuList.style.backgroundColor = 'transparent';
   } else {
     hamburgerIcon.classList.add('fa-bars');
     hamburgerIcon.classList.remove('fa-xmark');
