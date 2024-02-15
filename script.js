@@ -24,3 +24,19 @@ menuIcon.addEventListener('click', () => {
     }
   });
 });
+
+// API
+
+const getQuote = async () => {
+  const response = await fetch('https://type.fit/api/quotes');
+  const quotes = await response.json();
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const quote = quotes[randomIndex];
+
+  document.getElementById('quote-text').innerText = quote.text;
+  document.getElementById('quote-author').innerText = quote.author || 'Unknown';
+};
+
+// Priradenie udalosti kliknutia a volanie funkcie getQuote pri načítaní stránky
+document.getElementById('new-quote').addEventListener('click', getQuote);
+window.onload = getQuote;

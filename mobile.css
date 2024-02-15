@@ -3,7 +3,7 @@
   /* HEADER */
 
   header {
-    position: relative;
+    /* position: relative; */
     height: 70px;
   }
 
@@ -45,6 +45,11 @@
 
   nav ul:nth-child(2) {
     display: none;
+  }
+
+  nav li a {
+    color: red;
+    font-size: 28px;
   }
 
 
