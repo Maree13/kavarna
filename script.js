@@ -40,3 +40,28 @@ const getQuote = async () => {
 // Priradenie udalosti kliknutia a volanie funkcie getQuote pri načítaní stránky
 document.getElementById('new-quote').addEventListener('click', getQuote);
 window.onload = getQuote;
+
+// ARROW UP
+
+const arrowIcon = document.querySelector('.fa-arrow-up-from-bracket');
+
+window.addEventListener('scroll', () => {
+  // Vypočítam výšku okna (viewportu)
+  const viewportHeight = window.innerHeight;
+  // Zistím, ako ďaleko sme scroll-ovali
+  const scrollDistance = window.scrollY;
+
+  if (scrollDistance >= viewportHeight) {
+    arrowIcon.style.display = 'block';
+  } else {
+    arrowIcon.style.display = 'none';
+  }
+});
+
+// Pridanie 'click' event listener na arrowIcon
+arrowIcon.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});

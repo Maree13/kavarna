@@ -163,6 +163,12 @@ main {
   text-transform: lowercase;
 }
 
+.rectangle01,
+.rectangle02,
+.rectangle03 {
+  font-weight: bold;
+}
+
 /* SECTION 02 */
 
 /* API QUOTE - MOZNO TO TU DAM, ESTE NEVIEM */
