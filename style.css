@@ -216,6 +216,26 @@ main {
   /* Zväčšenie o 5% */
 }
 
+/* SECTION 02 - API QUOTE */
+
+.APIquote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.APIquote-text,
+.APIquote-author {
+  padding: 40px 100px 0 100px;
+  text-align: center;
+}
+
+.APIquote-button {
+  padding: 10px 15px;
+  margin: 20px;
+}
+
 
 /* SECTION 03 */
 
@@ -246,4 +266,16 @@ main {
 
 .fourth-page {
   min-height: calc(100vh - 150px);
+}
+
+/* ARROW UP ICON */
+
+.fa-arrow-up-from-bracket {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  /* font-size: 30px; */
 }
