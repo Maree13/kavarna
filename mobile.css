@@ -20,7 +20,6 @@
     /* display: block; */
     /*!important;*/
     display: none;
-
     position: absolute;
     top: 80px;
     background-color: var(--background-light);
@@ -30,7 +29,7 @@
 
   .logo img {
     width: 60px;
-    top: 40px;
+    /* top: 40px; */
     position: relative;
     z-index: 999;
   }
@@ -44,9 +43,8 @@
     background-color: var(--background-light);
     width: 100vw;
     height: 100vh;
-    margin: 0;
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
   }
 
