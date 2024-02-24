@@ -25,6 +25,13 @@ menuIcon.addEventListener('click', () => {
   });
 });
 
+document.querySelectorAll('nav a').forEach((link) => {
+  link.addEventListener('click', () => {
+    menuList.style.display = 'none';
+    hamburgerIcon.classList.replace('fa-xmark', 'fa-bars'); // Vrátí ikonu menu do povodneho stavu
+  });
+});
+
 // API
 
 const getQuote = async () => {
@@ -65,3 +72,25 @@ arrowIcon.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
+// FORM - PASSWORD CHECK
+
+const verifyRegistration = () => {
+  let password = document.getElementById('password').value;
+  let confirmPassword = document.getElementById('confirmPassword').value;
+  let message = document.getElementById('message');
+
+  // Kontrola, zda jsou hesla shodná a splňují základní požadavky
+  if (password === confirmPassword) {
+    if (password.length >= 8) {
+      message.textContent = 'Registrace byla úspěšná.';
+      message.style.color = 'green';
+    } else {
+      message.textContent = 'Heslo musí mít alespoň 8 znaků.';
+      message.style.color = 'red';
+    }
+  } else {
+    message.textContent = 'Hesla se neshodují.';
+    message.style.color = 'red';
+  }
+};

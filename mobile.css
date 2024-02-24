@@ -29,7 +29,7 @@
   }
 
   .logo img {
-    width: 100px;
+    width: 60px;
     top: 40px;
     position: relative;
     z-index: 999;
@@ -41,6 +41,13 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: var(--background-light);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   nav ul:nth-child(2) {
@@ -48,7 +55,7 @@
   }
 
   nav li a {
-    color: red;
+    color: var(--font-red);
     font-size: 28px;
   }
 
@@ -58,21 +65,7 @@
   /* RECTANGLES */
 
   .rectangle-container {
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    right: 0;
-    bottom: 0;
-    padding-bottom: 20px;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-  }
-
-  .rectangle {
-    /* width: 190px;
-    max-height: 130px;
-    border-width: 7px; */
     display: none;
   }
+
+}

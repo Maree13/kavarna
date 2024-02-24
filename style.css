@@ -12,6 +12,8 @@
   --background-dark: #1a1a1a;
   --font-dark: #1a1a1a;
   --light: #f7f7f7;
+  --font-red: #cc0000;
+  --background-dark-transparent: 0, 0, 0, 0.5;
 }
 
 /* BODY */
@@ -150,6 +152,7 @@ main {
 
 .rectangle:hover {
   transform: rotate(10deg);
+  background-color: rgba(var(--background-dark-transparent));
 }
 
 .rectangle-text {
@@ -163,10 +166,11 @@ main {
   text-transform: lowercase;
 }
 
-.rectangle01,
-.rectangle02,
-.rectangle03 {
-  font-weight: bold;
+.main-rectangle_text {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
 }
 
 /* SECTION 02 */
