@@ -106,3 +106,19 @@ const verifyRegistration = () => {
     message.style.letterSpacing = '0.4rem';
   }
 };
+
+// TOGGLE
+
+const toggleThemeBtn = document.querySelector('.button-mode');
+
+toggleThemeBtn.addEventListener('click', () => {
+  const isDarkMode = document.body.classList.toggle('dark-mode');
+  toggleThemeBtn.textContent = isDarkMode ? 'Back to the Light' : 'Try It Dark';
+
+  // Změna textu tlačítka zároveň s přepínáním tématu
+  const buttonElm = document.querySelectorAll('.button');
+
+  buttonElm.forEach((button) => {
+    button.classList.toggle('dark-theme-button');
+  });
+});

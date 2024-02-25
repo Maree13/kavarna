@@ -33,6 +33,7 @@ body {
 }
 
 
+
 /* HEADER */
 
 header {
@@ -415,6 +416,12 @@ main {
   margin-bottom: 50px;
 }
 
+/* BUTTON CHANGE TO DARK MODE */
+
+.button-mode {
+  margin-bottom: 200px;
+}
+
 
 /* FOOTER */
 
@@ -453,4 +460,23 @@ main {
 
 .fa-arrow-up-from-bracket:hover {
   color: var(--font-red);
+}
+
+
+/* TOGGLE - JAVASCRIPT */
+
+.dark-mode {
+  background-color: #111;
+  color: #f7f7f7;
+}
+
+.light-mode {
+  background-color: #f7f7f7;
+  /* Příklad světlé barvy textu */
+  color: #111;
+}
+
+.dark-theme-button {
+  background-color: #f7f7f7;
+  color: #111;
 }
