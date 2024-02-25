@@ -121,4 +121,7 @@ toggleThemeBtn.addEventListener('click', () => {
   buttonElm.forEach((button) => {
     button.classList.toggle('dark-theme-button');
   });
+
+  const footerElm = document.querySelector('.footer');
+  footerElm.style.backgroundColor = isDarkMode ? '#111' : '#f7f7f7';
 });
