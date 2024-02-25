@@ -106,6 +106,12 @@ main {
   /* padding-top: 150px; */
 }
 
+.heading {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
 
 /* FIRST PAGE SECTION */
 
@@ -198,10 +204,10 @@ main {
 
 /* SECOND PAGE GALLERY */
 
-.page02-heading {
+/* .page02-heading {
   text-align: center;
   padding: 30px;
-}
+} */
 
 .second-page {
   /* min-height: calc(100vh - 200px); */
@@ -266,11 +272,11 @@ main {
   padding-top: 100px;
 }
 
-.third-page_header {
+/* .third-page_heading {
   text-align: center;
   padding: 30px;
   margin-top: 10%;
-}
+} */
 
 .third-page_list {
   text-align: center;
@@ -278,39 +284,33 @@ main {
   list-style-type: none;
 }
 
-/* SECTION 04  */
+/* SECTION 04 - KONTAKT */
 
 .fourth-page {
   min-height: calc(100vh - 150px);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: baseline;
   width: 90%;
 }
 
 /* GOOGLE MAP */
 
-.contact-googlemap {
-  padding: 40px;
+.map-responsive {
+  margin-top: 100px;
+  margin-left: 50px;
   /* width: 40%; */
-}
-
-.map-heading {
-  text-align: center;
-  padding: 30px;
 }
 
 
 /* FORM */
 
-.form-heading {
+.form {
+  width: 40%;
   text-align: center;
-  padding: 30px;
 }
 
-/* .form {
-  width: 50%;
-} */
 
 /* BUTTONS */
 
