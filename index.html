@@ -34,7 +34,7 @@
       <!-- LOGO -->
 
       <div class="logo">
-        <img src="./logo/logo-black.png" alt="logo" class="logo-img" />
+        <img src="./logo/logo.png" alt="logo" class="logo-img" />
       </div>
 
       <!-- MENU  -->
@@ -97,19 +97,24 @@
             </div>
           </a>
         </div>
+
+        <div class="rectangle-container_mobile">
+          <a href="#"><p class="main-rectangle_text">Výstavy</p></a>
+          <a href="#"><p class="main-rectangle_text">Koncerty</p></a>
+          <a href="#"><p class="main-rectangle_text">Divadlo</p></a>
+        </div>
       </section>
 
       <section class="second-page" id="page02">
-        <!-- <p class="section02-APIquote">
-          Tu moze byt nejaka quota stahovana pomocou API
-        </p> -->
         <h1 class="page02-heading">— O kávě</h1>
+
+        <!-- API -->
 
         <div class="APIquote-container" id="quote-container">
           <p class="APIquote-text" id="quote-text"></p>
           <p class="APIquote-author" id="quote-author"></p>
-          <button class="APIquote-button" id="new-quote">
-            Pick Your Quote and Take Your Coffee
+          <button class="button button-APIquote" id="new-quote">
+            Your Quote
           </button>
         </div>
 
@@ -199,8 +204,9 @@
               required
             /><br /><br />
             <input
+              class="button button-submit"
               type="button"
-              value="Registrovat"
+              value="Odeslat"
               onclick="verifyRegistration()"
             />
           </form>
