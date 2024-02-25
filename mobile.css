@@ -28,7 +28,9 @@
   }
 
   .logo img {
-    width: 60px;
+    height: 45px;
+    width: auto;
+    /* width: 50px; */
     /* top: 40px; */
     position: relative;
     z-index: 999;
@@ -49,12 +51,12 @@
   }
 
   nav ul:nth-child(2) {
-    display: none;
+    /* display: none; */
   }
 
   nav li a {
-    color: var(--font-red);
-    font-size: 28px;
+    color: var(--font-dark);
+    font-size: 34px;
   }
 
 
@@ -66,4 +68,48 @@
     display: none;
   }
 
+  /* SECOND PAGE GALLERY */
+
+  .secondpage-gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .image01,
+  .image02,
+  .image03 {
+    transition: transform 0.3s ease;
+  }
+
+  .image01:hover,
+  .image02:hover,
+  .image03:hover {
+    transform: scale(1.01);
+  }
+
+
+
+  /* SECTION 04  */
+
+  .fourth-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  /* GOOGLE MAP */
+
+  .contact-googlemap {
+    text-align: center;
+  }
+
+  /* FORM */
+
+  .form {
+    text-align: center;
+    /* padding-left: 40px; */
+    padding-bottom: 20%;
+  }
 }

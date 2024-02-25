@@ -27,8 +27,11 @@ menuIcon.addEventListener('click', () => {
 
 document.querySelectorAll('nav a').forEach((link) => {
   link.addEventListener('click', () => {
-    menuList.style.display = 'none';
-    hamburgerIcon.classList.replace('fa-xmark', 'fa-bars'); // Vrátí ikonu menu do povodneho stavu
+    if (window.innerWidth <= 768) {
+      // Menu se skryje pouze na malých obrazovkách
+      menuList.style.display = 'none';
+      hamburgerIcon.classList.replace('fa-xmark', 'fa-bars');
+    }
   });
 });
 

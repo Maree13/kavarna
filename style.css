@@ -128,7 +128,7 @@ main {
   gap: 40px;
   position: absolute;
   right: 50px;
-  bottom: 7%;
+  bottom: 15%;
   flex-wrap: wrap-reverse;
 }
 
@@ -191,6 +191,11 @@ main {
 
 /* SECOND PAGE GALLERY */
 
+.page02-heading {
+  text-align: center;
+  padding: 30px;
+}
+
 .second-page {
   /* min-height: calc(100vh - 200px); */
   min-height: 100vh;
@@ -216,13 +221,13 @@ main {
   height: 100%;
   background-size: cover;
   /* border-radius: 3px; */
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .image01:hover,
 .image02:hover,
 .image03:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   /* Zväčšenie o 5% */
 }
 
@@ -268,14 +273,55 @@ main {
 
 /* SECTION 04  */
 
+.fourth-page {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
 /* GOOGLE MAP */
 
 .contact-googlemap {
   padding: 40px;
+  /* width: 40%; */
 }
 
-.fourth-page {
-  min-height: calc(100vh - 150px);
+.map-heading {
+  text-align: center;
+  padding: 30px;
+}
+
+
+/* FORM */
+
+.form-heading {
+  text-align: center;
+  padding: 30px;
+}
+
+/* .form {
+  width: 50%;
+} */
+
+
+
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--background-light);
+  width: 100vw;
+}
+
+.copyright {
+  /* font-family: 'Inconsolata', monospace; */
+  padding: 15px;
+  font-size: 14px;
+  /* margin-top: 20rem; */
 }
 
 /* ARROW UP ICON */
