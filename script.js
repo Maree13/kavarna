@@ -86,14 +86,23 @@ const verifyRegistration = () => {
   // Kontrola, zda jsou hesla shodná a splňují základní požadavky
   if (password === confirmPassword) {
     if (password.length >= 8) {
-      message.textContent = 'Registrace byla úspěšná.';
-      message.style.color = 'green';
+      message.textContent = '— Registrace byla úspěšná.';
+      message.style.color = '#111';
+      message.style.fontSize = '18px';
+      message.style.textTransform = 'lowercase';
+      message.style.letterSpacing = '0.4rem';
     } else {
-      message.textContent = 'Heslo musí mít alespoň 8 znaků.';
-      message.style.color = 'red';
+      message.textContent = '— Heslo musí mít alespoň 8 znaků.';
+      message.style.color = '#cc0000';
+      message.style.fontSize = '18px';
+      message.style.textTransform = 'lowercase';
+      message.style.letterSpacing = '0.4rem';
     }
   } else {
-    message.textContent = 'Hesla se neshodují.';
-    message.style.color = 'red';
+    message.textContent = '— Hesla se neshodují.';
+    message.style.color = '#cc0000';
+    message.style.fontSize = '18px';
+    message.style.textTransform = 'lowercase';
+    message.style.letterSpacing = '0.4rem';
   }
 };

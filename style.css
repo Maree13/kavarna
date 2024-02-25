@@ -9,11 +9,18 @@
 :root {
   --background-light: #f7f7f7;
   /* --background-dark: #111; */
-  --background-dark: #1a1a1a;
-  --font-dark: #1a1a1a;
+  --background-dark: #111;
+  --font-dark: #111;
   --light: #f7f7f7;
   --font-red: #cc0000;
   --background-dark-transparent: 0, 0, 0, 0.5;
+  --font-paleblack: #111;
+  --background-pink: #f0d4db;
+  --white: whitesmoke;
+  --yellow-sun: #fff936;
+  --pink-hover: #fe80d5;
+  --orange-hover: #ffb306;
+  --menu-hover: #ea5f84;
 }
 
 /* BODY */
@@ -65,9 +72,12 @@ header {
   /* font-style: italic; */
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 48px;
   font-weight: bold;
-  color: var(--font-dark)
+  color: var(--font-dark);
+  font-size: 24px;
+  text-transform: lowercase;
+  /* font-family: 'Inconsolata', monospace; */
+  letter-spacing: 0.4rem;
 }
 
 
@@ -109,6 +119,10 @@ nav li a {
   color: var(--font-dark);
 }
 
+nav li a:hover {
+  color: var(--font-red)
+}
+
 nav ul:nth-child(2) li {
   margin-right: 0;
   /* padding-right: 0; */
@@ -130,6 +144,9 @@ main {
   text-align: center;
   padding: 30px;
   margin-bottom: 30px;
+  font-size: 24px;
+  /* text-transform: lowercase; */
+  letter-spacing: 0.4rem;
 }
 
 
@@ -194,10 +211,19 @@ main {
 }
 
 .main-rectangle_text {
-  font-size: 36px;
+  font-weight: 900;
+  /* font-size: 36px;
   font-weight: 900;
   font-family: "Lilita One", sans-serif;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+  font-size: 24px;
+  text-transform: lowercase;
+  /* font-family: 'Inconsolata', monospace; */
+  letter-spacing: 0.4rem;
+}
+
+.main-rectangle_text:hover {
+  color: var(--font-red);
 }
 
 /* RECTANGLES MENU - MOBILE VERSION */
@@ -208,8 +234,6 @@ main {
 
 /* SECTION 02 */
 
-/* API QUOTE - MOZNO TO TU DAM, ESTE NEVIEM */
-
 .section02-APIquote {
   text-align: center;
   margin-top: 50px;
@@ -218,7 +242,7 @@ main {
 /* PARAGRAPH */
 
 .section02-paragraph01 {
-  padding: 40px 100px 0 100px;
+  padding: 40px 100px 40px 100px;
   text-align: center;
 }
 
@@ -338,7 +362,8 @@ main {
   /* font-family: 'Inconsolata', monospace; */
   letter-spacing: 0.4rem;
   text-align: center;
-  margin: auto 30px;
+  /* margin: auto 30px; */
+  margin: 100px;
 }
 
 
@@ -348,7 +373,7 @@ main {
 }
 
 .contact-heading a:hover {
-  color: var(--pink-hover)
+  color: var(--font-red);
 }
 
 .fa-github {
@@ -357,11 +382,12 @@ main {
 }
 
 .fa-github:hover {
-  color: var(--pink-hover);
+  color: var(--font-red);
 }
 
 .fa-heart {
-  color: pink;
+  color: var(--font-red)
+    /* color: pink; */
 }
 
 
@@ -377,6 +403,12 @@ main {
   background-color: var(--background-dark);
   color: var(--light);
   cursor: pointer;
+}
+
+.button:hover {
+  /* background-color: var(--font-red);
+  border-color: var(--font-red); */
+  color: var(--font-red)
 }
 
 .button-submit {
@@ -417,4 +449,8 @@ main {
   /* font-size: 30px; */
   margin-right: 50px;
   padding: 0;
+}
+
+.fa-arrow-up-from-bracket:hover {
+  color: var(--font-red);
 }
