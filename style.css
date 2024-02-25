@@ -31,6 +31,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 150px;
@@ -38,6 +39,13 @@ header {
   top: 0;
   z-index: 1000;
   background-color: var(--background-light);
+}
+
+.logo-heading_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
 }
 
 
@@ -50,6 +58,18 @@ header {
   width: 50px;
   margin-left: 50px;
 }
+
+/* NADPIS KAVARNA */
+
+.header-heading {
+  /* font-style: italic; */
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--font-dark)
+}
+
 
 
 /* HAMBURGER MENU ICON */
@@ -269,7 +289,7 @@ main {
 
 .third-page {
   min-height: 100vh;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 /* .third-page_heading {
@@ -282,6 +302,13 @@ main {
   text-align: center;
   padding: 30px;
   list-style-type: none;
+  margin-bottom: 50px;
+}
+
+/* FORM */
+
+.form {
+  text-align: center;
 }
 
 /* SECTION 04 - KONTAKT */
@@ -289,27 +316,55 @@ main {
 .fourth-page {
   min-height: calc(100vh - 150px);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* GOOGLE MAP */
 
-.map-responsive {
-  margin-top: 100px;
-  margin-left: 50px;
-  /* width: 40%; */
+.contact-googlemap {
+  margin-top: 70px;
 }
 
+/* .map-responsive {} */
 
-/* FORM */
-
-.form {
-  width: 40%;
+/* designed with love links */
+.contact-heading {
+  color: var(--font-paleblack);
+  font-size: 24px;
+  text-transform: lowercase;
+  /* font-family: 'Inconsolata', monospace; */
+  letter-spacing: 0.4rem;
   text-align: center;
+  margin: auto 30px;
 }
+
+
+.contact-heading a {
+  text-decoration: none;
+  color: var(--font-paleblack)
+}
+
+.contact-heading a:hover {
+  color: var(--pink-hover)
+}
+
+.fa-github {
+  font-size: 24px;
+  color: var(--font-paleblack);
+}
+
+.fa-github:hover {
+  color: var(--pink-hover);
+}
+
+.fa-heart {
+  color: pink;
+}
+
+
 
 
 /* BUTTONS */

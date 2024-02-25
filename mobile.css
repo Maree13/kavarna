@@ -7,6 +7,10 @@
     height: 70px;
   }
 
+  .header-heading {
+    font-size: 24px;
+  }
+
   /* HAMBURGER MENU ICON */
 
   .menu-icon {
@@ -116,13 +120,16 @@
   .fourth-page {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
   }
 
   /* GOOGLE MAP */
 
   .contact-googlemap {
     text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
   }
 
   /* FORM */
@@ -131,6 +138,7 @@
     text-align: center;
     /* padding-left: 40px; */
     padding-bottom: 20%;
+    width: 100%;
   }
 
 
