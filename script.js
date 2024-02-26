@@ -83,37 +83,39 @@ const verifyRegistration = () => {
   let confirmPassword = document.getElementById('confirmPassword').value;
   let message = document.getElementById('message');
 
-  // Kontrola, zda jsou hesla shodná a splňují základní požadavky
+  // Ceknem, ci je aplikovany dark mode
+  const isDarkMode = document.body.classList.contains('dark-mode');
+
+  // Nastavim farbu textu podla aktualneho modu
+  const textColor = isDarkMode ? 'var(--light)' : 'var(--font-dark)';
+
   if (password === confirmPassword) {
     if (password.length >= 8) {
       message.textContent = '— Registrace byla úspěšná.';
-      message.style.color = '#111';
-      message.style.fontSize = '18px';
-      message.style.textTransform = 'lowercase';
-      message.style.letterSpacing = '0.4rem';
+      message.style.color = textColor; // Použití dynamicky zvolené barvy
     } else {
       message.textContent = '— Heslo musí mít alespoň 8 znaků.';
-      message.style.color = '#cc0000';
-      message.style.fontSize = '18px';
-      message.style.textTransform = 'lowercase';
-      message.style.letterSpacing = '0.4rem';
+      message.style.color = 'var(--font-red)'; // Barva pro chybové zprávy
     }
   } else {
     message.textContent = '— Hesla se neshodují.';
-    message.style.color = '#cc0000';
-    message.style.fontSize = '18px';
-    message.style.textTransform = 'lowercase';
-    message.style.letterSpacing = '0.4rem';
+    message.style.color = 'var(--font-red)'; // Barva pro chybové zprávy
   }
+
+  // Aplikujem dalšie styly
+  message.style.fontSize = '18px';
+  message.style.textTransform = 'lowercase';
+  message.style.letterSpacing = '0.4rem';
 };
 
 // TOGGLE
 
 const toggleThemeBtn = document.querySelector('.button-mode');
+// const message = document.querySelector('.message'); -TATO PROMENNA JE UZ NAHORE RAZ DEFINOVANA
 
 toggleThemeBtn.addEventListener('click', () => {
   const isDarkMode = document.body.classList.toggle('dark-mode');
-  toggleThemeBtn.textContent = isDarkMode ? 'Back to the Light' : 'Try It Dark';
+  toggleThemeBtn.textContent = isDarkMode ? 'Back to Light' : 'Try It Dark';
 
   // Změna textu tlačítka zároveň s přepínáním tématu
   const buttonElm = document.querySelectorAll('.button');
@@ -124,4 +126,14 @@ toggleThemeBtn.addEventListener('click', () => {
 
   const footerElm = document.querySelector('.footer');
   footerElm.style.backgroundColor = isDarkMode ? '#111' : '#f7f7f7';
+
+  // Funkce showMessage používá šipkovou notaci pro definici
+  const showMessage = (text) => {
+    message.textContent = text;
+
+    // Zjištění, zda je aktuálně aplikován tmavý režim
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    // Nastavení barvy textu podle aktuálního tématu
+    message.style.color = isDarkMode ? 'var(--light)' : 'var(--font-dark)';
+  };
 });
