@@ -302,6 +302,18 @@ main {
 .APIquote-author {
   padding: 40px 100px 0 100px;
   text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.4rem;
+}
+
+.APIquote-text {
+  color: var(--font-red);
+  font-weight: bold;
+}
+
+.APIquote-author {
+  font-size: 14px;
+  ;
 }
 
 .APIquote-button {
