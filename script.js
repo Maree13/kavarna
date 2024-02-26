@@ -95,11 +95,11 @@ const verifyRegistration = () => {
       message.style.color = textColor; // Použití dynamicky zvolené barvy
     } else {
       message.textContent = '— Heslo musí mít alespoň 8 znaků.';
-      message.style.color = 'var(--font-red)'; // Barva pro chybové zprávy
+      message.style.color = 'var(--font-red)';
     }
   } else {
     message.textContent = '— Hesla se neshodují.';
-    message.style.color = 'var(--font-red)'; // Barva pro chybové zprávy
+    message.style.color = 'var(--font-red)';
   }
 
   // Aplikujem dalšie styly
@@ -111,7 +111,6 @@ const verifyRegistration = () => {
 // TOGGLE LIGHT MODE - DARK MODE
 
 const toggleThemeBtn = document.querySelector('.button-mode');
-// const message = document.querySelector('.message'); -TATO PROMENNA JE UZ NAHORE RAZ DEFINOVANA
 
 toggleThemeBtn.addEventListener('click', () => {
   const isDarkMode = document.body.classList.toggle('dark-mode');

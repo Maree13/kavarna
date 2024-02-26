@@ -3,7 +3,6 @@
   /* HEADER */
 
   header {
-    /* position: relative; */
     height: 70px;
   }
 
@@ -38,8 +37,6 @@
     margin-left: 30px;
     height: 45px;
     width: auto;
-    /* width: 50px; */
-    /* top: 40px; */
     position: relative;
     z-index: 999;
   }

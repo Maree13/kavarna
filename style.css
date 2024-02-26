@@ -8,19 +8,13 @@
 /* VARIABLES COLORS */
 :root {
   --background-light: #f7f7f7;
-  /* --background-dark: #111; */
   --background-dark: #111;
   --font-dark: #111;
   --light: #f7f7f7;
   --font-red: #cc0000;
   --background-dark-transparent: 0, 0, 0, 0.5;
   --font-paleblack: #111;
-  --background-pink: #f0d4db;
   --white: whitesmoke;
-  --yellow-sun: #fff936;
-  --pink-hover: #fe80d5;
-  --orange-hover: #ffb306;
-  --menu-hover: #ea5f84;
 }
 
 /* BODY */
