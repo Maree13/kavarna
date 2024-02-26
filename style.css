@@ -207,13 +207,8 @@ main {
 
 .main-rectangle_text {
   font-weight: 900;
-  /* font-size: 36px;
-  font-weight: 900;
-  font-family: "Lilita One", sans-serif;
-  text-transform: uppercase; */
   font-size: 24px;
   text-transform: lowercase;
-  /* font-family: 'Inconsolata', monospace; */
   letter-spacing: 0.4rem;
 }
 
@@ -323,12 +318,6 @@ main {
   padding-top: 130px;
 }
 
-/* .third-page_heading {
-  text-align: center;
-  padding: 30px;
-  margin-top: 10%;
-} */
-
 .third-page_list {
   text-align: center;
   padding: 30px;
@@ -340,6 +329,11 @@ main {
 
 .form {
   text-align: center;
+}
+
+.message {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* SECTION 04 - KONTAKT */
@@ -394,7 +388,6 @@ main {
 
 .fa-heart {
   color: var(--font-red)
-    /* color: pink; */
 }
 
 /* CLASSES FOR JAVASCRIPT */
@@ -430,25 +423,6 @@ main {
 .dark-mode .main-rectangle_text {
   color: var(--font-red);
 }
-
-/* menu */
-
-/* .dark-mode .fa-brands,
-.dark-mode .fa-solid,
-.dark-mode .header-heading,
-.dark-mode .nav-links li a {
-  color: var(--font-red);
-} */
-
-/* .dark-mode header {
-  background-color: var(--background-dark);
-} */
-
-
-
-/* .dark-mode .main-rectangle_text:hover {
-  color: var(--light);
-} */
 
 
 /* BUTTONS */
@@ -505,9 +479,6 @@ main {
 
 .fa-arrow-up-from-bracket {
   display: none;
-  /* position: fixed; */
-  /* bottom: 15px; */
-  /* right: 50px; */
   cursor: pointer;
   z-index: 1000;
   /* font-size: 30px; */
