@@ -404,8 +404,45 @@ main {
   background-color: var(--background-dark);
 }
 
+/* ramecky a odkazy */
+
+.dark-mode .main-rectangle_text,
+.dark-mode .rectangle-text,
+.dark-mode {
+  color: var(--light);
+}
+
+.dark-mode .rectangle {
+  border: 0px solid var(--font-dark);
+}
+
+.dark-mode .rectangle-text {
+  color: var(--font-dark);
+  background-color: var(--background-dark-transparent);
+}
+
+.dark-mode .main-rectangle_text {
+  color: var(--font-red);
+}
+
+/* menu */
+
+/* .dark-mode .fa-brands,
+.dark-mode .fa-solid,
+.dark-mode .header-heading,
+.dark-mode .nav-links li a {
+  color: var(--font-red);
+} */
+
+/* .dark-mode header {
+  background-color: var(--background-dark);
+} */
 
 
+
+/* .dark-mode .main-rectangle_text:hover {
+  color: var(--light);
+} */
 
 
 /* BUTTONS */
