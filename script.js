@@ -108,7 +108,7 @@ const verifyRegistration = () => {
   message.style.letterSpacing = '0.4rem';
 };
 
-// TOGGLE
+// TOGGLE LIGHT MODE - DARK MODE
 
 const toggleThemeBtn = document.querySelector('.button-mode');
 // const message = document.querySelector('.message'); -TATO PROMENNA JE UZ NAHORE RAZ DEFINOVANA
@@ -127,13 +127,22 @@ toggleThemeBtn.addEventListener('click', () => {
   const footerElm = document.querySelector('.footer');
   footerElm.style.backgroundColor = isDarkMode ? '#111' : '#f7f7f7';
 
-  // Funkce showMessage používá šipkovou notaci pro definici
+  const contactHeading = document.querySelector('.contact-heading');
+  const githubIcon = document.querySelector('.fa-github');
+
+  if (isDarkMode) {
+    contactHeading.style.color = 'var(--light)';
+    githubIcon.style.color = 'var(--light)';
+  } else {
+    contactHeading.style.color = 'var(--font-dark)';
+    githubIcon.style.color = 'var(--font-dark)';
+  }
+
   const showMessage = (text) => {
     message.textContent = text;
 
-    // Zjištění, zda je aktuálně aplikován tmavý režim
     const isDarkMode = document.body.classList.contains('dark-mode');
-    // Nastavení barvy textu podle aktuálního tématu
+
     message.style.color = isDarkMode ? 'var(--light)' : 'var(--font-dark)';
   };
 });

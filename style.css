@@ -391,6 +391,20 @@ main {
     /* color: pink; */
 }
 
+/* CLASSES FOR JAVASCRIPT */
+
+.dark-mode .contact-heading,
+.dark-mode .contact-heading a,
+.dark-mode .fa-github,
+.dark-mode {
+  color: var(--light);
+}
+
+.dark-mode .contact-heading {
+  background-color: var(--background-dark);
+}
+
+
 
 
 
