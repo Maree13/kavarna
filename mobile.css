@@ -1,5 +1,9 @@
 @media (max-width: 768px) {
 
+  body {
+    font-size: 18px;
+  }
+
   /* HEADER */
 
   header {
@@ -136,6 +140,10 @@
     /* padding-left: 40px; */
     padding-bottom: 20%;
     width: 100%;
+  }
+
+  .contact-heading {
+    font-size: 18px;
   }
 
 
