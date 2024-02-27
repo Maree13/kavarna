@@ -60,7 +60,9 @@
   }
 
   nav ul:nth-child(2) {
-    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
   }
 
   nav li a {
